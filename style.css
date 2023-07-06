@@ -1,0 +1,59 @@
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  text-align: center;
+  list-style-position: inside;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-right: 1.3rem;
+}
+
+div.main-content {
+  position: relative;
+  top: 8rem;
+  font-family: 'Tajawal', sans-serif;
+}
+
+div.main-content p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .figure {
+    flex-flow: column;
+    padding: 0;
+  }
+
+div.main-content.figure img {
+  display: flex;
+}
+
+footer {
+  position: sticky;
+  top: 100%;
+}
